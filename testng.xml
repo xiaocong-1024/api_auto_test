@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="测试套件" parallel="tests" thread-count="1">
+    <test name="前程贷接口测试">
+        <classes>
+            <class name="com.kingsoft.testcases.RegisterTest"/>
+            <class name="com.kingsoft.testcases.LoginTest"/>
+            <class name="com.kingsoft.testcases.GetUserInfoTest"/>
+            <class name="com.kingsoft.testcases.RechargeTest"/>
+            <class name="com.kingsoft.testcases.AddLoanTest"/>
+        </classes>
+    </test>
+</suite>
