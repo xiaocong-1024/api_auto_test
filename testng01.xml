@@ -5,6 +5,9 @@
         <classes>
             <class name="com.kingsoft.testcases.RegisterTest"/>
             <class name="com.kingsoft.testcases.LoginTest"/>
+            <class name="com.kingsoft.testcases.GetUserInfoTest"/>
+            <class name="com.kingsoft.testcases.RechargeTest"/>
+            <class name="com.kingsoft.testcases.AddLoanTest"/>
         </classes>
     </test>
 </suite>
