@@ -11,6 +11,10 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.Map;
 
+import com.kingsoft.data.Constants;
+
+
+
 /**
  * @author xiaocong
  * @date 2021/7/13 0013 - 19:55
@@ -23,9 +27,10 @@ public class JDBCUtils {
     //    oracel:jdbc:oracel:thin:@localhost:1521:DBname
         //sqlserver:jdbc:microsoft:sqlserver://localhost:1433;DatabaseName=DBname
         //mysql:jdbc:mysql://localhost:3306/DBname
-        String url = "jdbc:mysql://8.129.91.152:3306/futureloan?useUnicode=true&characterEncoding=utf-8";
-        String user = "future";
-        String password = "123456";
+	String url = "jdbc:mysql://" + Constants.DB_BASE_URL + Constants.DB_NAME + "?useUnicode=true&chatacterEncoding=utf-8";
+//        String url = "jdbc:mysql://8.129.91.152:3306/futureloan?useUnicode=true&characterEncoding=utf-8";
+        String user = Constants.DB_USERNAME;
+        String password = Constants.DB_PASSWORD;
         Connection connection = null;
         try {
             connection = DriverManager.getConnection(url, user, password);

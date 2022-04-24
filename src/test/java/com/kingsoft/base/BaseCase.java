@@ -40,7 +40,7 @@ public class BaseCase {
     public void globalSetUp(){
         //全局配置
         //1.一次配置，全局生效
-        RestAssured.baseURI = "http://api.lemonban.com/futureloan";
+        RestAssured.baseURI = Constants.BASE_URL;
          //2.加入下面的config配置，rest-assured响应结果中的小数就会通过BigDecimal来存储（默认情况下，会使用Float进行存储）
         RestAssured.config = RestAssured.config().jsonConfig(jsonConfig().numberReturnType(BIG_DECIMAL));
         //3.全局日志配置(所有的case都集成到一个日志文件)
