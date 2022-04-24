@@ -27,7 +27,7 @@ public class JDBCUtils {
     //    oracel:jdbc:oracel:thin:@localhost:1521:DBname
         //sqlserver:jdbc:microsoft:sqlserver://localhost:1433;DatabaseName=DBname
         //mysql:jdbc:mysql://localhost:3306/DBname
-	String url = "jdbc:mysql://" + Constants.DB_BASE_URL + Constants.DB_NAME + "?useUnicode=true&chatacterEncoding=utf-8";
+	String url = "jdbc:mysql://" + Constants.DB_BASE_URL + "/" +  Constants.DB_NAME + "?useUnicode=true&chatacterEncoding=utf-8";
 //        String url = "jdbc:mysql://8.129.91.152:3306/futureloan?useUnicode=true&characterEncoding=utf-8";
         String user = Constants.DB_USERNAME;
         String password = Constants.DB_PASSWORD;
